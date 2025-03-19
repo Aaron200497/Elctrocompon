@@ -10,7 +10,7 @@ let categorias = [];
 
 // Cargar datos del Excel "stock.xlsx" (se añade parámetro para evitar caché)
 function loadExcelData() {
-  fetch('stock.xlsx?t=' + new Date().getTime())
+  fetch('stock.jsont=' + new Date().getTime())
     .then(response => response.arrayBuffer())
     .then(arrayBuffer => {
       const data = new Uint8Array(arrayBuffer);
